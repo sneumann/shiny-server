@@ -18,6 +18,6 @@ gdebi -n ss-latest.deb
 wget http://cran.r-project.org/src/contrib/Archive/Rcpp/Rcpp_0.10.5.tar.gz -O Rcpp_0.10.5.tar.gz
 R CMD INSTALL Rcpp_0.10.5.tar.gz
 
-R -e "install.packages('shiny', repos='http://cran.rstudio.com/')"
+R -e "install.packages(c('shiny', 'rmarkdown'), repos='http://cran.rstudio.com/')"
 
 cp -R /usr/local/lib/R/site-library/shiny/examples/* /srv/shiny-server/
