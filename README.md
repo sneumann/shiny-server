@@ -37,6 +37,14 @@ Now start a web browser and point it to `http://<hostname>:3838/APP_NAME/`
 
 To customize any of the above, or to explore the other ways Shiny Server can host Shiny apps, see the [Shiny Server Configuration Reference](https://rstudio.github.io/shiny-server/latest/#configuration-settings) for details on the various ways Shiny Server can be configured.
 
+## Virtual machine generation with Vagrant
+
+There are [Vagrant](https://www.vagrantup.com/) configurations to generate virtual machine images (VMs)
+with the current version of shiny-server installed in the vagrant/ subdirectoy. Go to the 
+distribution of your choice, and issue ````vagrant up```` which will pull the OS image
+and install everything inside the VM. Once finished, go to http://10.0.0.72:3838/ to visit 
+the sample applications. 
+
 ## Documentation & Contact & Support
 
 See [the Administrator's Guide to Shiny Server](https://rstudio.github.io/shiny-server/latest/) for more complete documentation regarding the setup and management of Shiny Server.
